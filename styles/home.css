@@ -7,6 +7,10 @@ html {
     --primary-color: #0284c7;
     --color-white: #fafafa;
     --color-black: #262626;
+    --color-gray: #737373;
+    --color-total-black: #171717;
+    --color-light-blue: #F0F9FF;
+    --color-light-grey: #e5e5e5;
 }
 
 body {
@@ -24,7 +28,6 @@ body {
 
 header {
     background-color: var(--primary-color);
-    
     height: 60px;
     box-shadow: 0px 10px 5px #e5e5e5;
 }
@@ -57,6 +60,7 @@ a {
     background-image: url('../images/hero.png');
     background-position: center;
     background-size: cover;
+    height: 537px;
 }
 
 h1 {
@@ -97,10 +101,144 @@ h1 span {
     cursor: pointer;
 }
 
-.services {
+h2 {
     color: #0369A1;
     font-size: 40px;
     font-weight: 700;
     text-align: center;
     padding: 70px 0px;
+}
+
+.service-block {
+    background-color: #0284C7;
+    height: 285px;
+}
+
+.service-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 73px;
+}
+.triangle {
+    width: 35px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.service {
+    width: calc(100% / 12 * 3);
+    height: 183px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 4px #525252;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.s02 {
+    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-3.png');
+}
+
+.s03 {
+    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-2.png');
+}
+
+.s04 {
+    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-1.png');
+}
+
+.service-number {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--color-light-blue);
+    margin-bottom: 60px;
+}
+
+.service-arrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.service-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--color-light-blue);
+    width: calc(100% / 3 * 2);
+}
+
+.arrow {
+    width: 45px;
+    color: var(--color-light-blue);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#background {
+    background-image: url('../images/background-1.png');
+    background-position: center;
+    background-size: cover;
+    height: 668px;
+}
+
+.description-text {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--color-total-black);
+    text-align: justify;
+    padding-bottom: 18px;
+}
+
+.description-button {
+    display: flex;
+    justify-content: end;
+}
+
+.review-section {
+    margin-top: 60px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    width: calc((100% / 12 * 6) - 20px);
+    height: 173px;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;   
+}
+
+.review-image {
+    align-self: center;
+}
+
+.review-name {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    color: var(--color-gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
 }
