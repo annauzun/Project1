@@ -84,6 +84,41 @@ h2 {
     padding: 80px 100px;
 }
 
+form {
+    width: calc(100% / 12 * 10);
+    margin: 0px auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.input-search {
+    width: 100%;
+    height: 40px;
+    background-color: #E0F2FE;
+    color: #A3A3A3;
+    border: 1px solid #BAE6FD;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 19px;
+    line-height: 38px;
+    text-align: left;
+    padding-left: 50px;
+    outline: none;
+}
+
+.button-search {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    border: none;
+    border-right: 3px solid #A3A3A3;
+    background-color: #E0F2FE;
+    outline: none;
+    cursor: pointer;
+}
+
 .specialists {
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +129,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .specialists-image {
@@ -131,4 +167,72 @@ h2 {
     border: 1px solid #38bdf8;
     border-radius: 10px;
     cursor: pointer;
+}
+
+footer {
+    height: 403px;
+    background-color: var(--color-light-blue);
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dento {
+    width: calc(100% / 12 * 5);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-dark-blue);
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: calc(100% / 12 * 2);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark-blue);
+}
+
+.contacts {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-text span {
+    font-weight: 700;
+}
+
+.contact-text {
+    display: flex;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.contact-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.license {
+    color: var(--color-dark-blue);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: right;
 }

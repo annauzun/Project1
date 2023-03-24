@@ -27,6 +27,24 @@ body {
     margin: 0 auto;
 }
 
+.return-button {
+    /*background-image: url('../images/arrow_circle_up.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);*/
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    color: var(--primary-color);
+    
+
+    
+   
+}
+
+
 header {
     background-color: var(--primary-color);
     height: 60px;
