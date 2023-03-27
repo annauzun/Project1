@@ -8,12 +8,13 @@ html {
     --color-white: #fafafa;
     --color-black: #262626;
     --color-gray: #737373;
-    --color-green: #26992A;
     --color-total-black: #171717;
     --color-light-blue: #F0F9FF;
     --color-dark-blue: #075985;
     --color-light-grey: #e5e5e5;
-    --gap: 20px;
+    --x-gap: 20px;
+    --y-gap: 60px;
+
 }
 
 body {
@@ -21,16 +22,17 @@ body {
 }
 
 .section {
-    max-width: 61%;
+    max-width: 1024px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 0 calc(var(--x-gap)/2);
 }
 
 header {
     background-color: var(--primary-color);
-    height: 60px;
-    box-shadow: 0px 10px 5px #e5e5e5;
+    height: var(--y-gap);
+    box-shadow: 0px 10px 5px var(--color-light-grey);
 }
 
 a {
@@ -61,21 +63,21 @@ a {
     background-image: url('../images/hero.png');
     background-position: center;
     background-size: cover;
-    height: 537px;
-    margin-bottom: 30px;
+    height: auto;
+    margin-bottom: calc(var(--y-gap) / 2);
+    padding-bottom: var(--y-gap);
 }
 
 h1 {
     font-size: 56px;
-    line-height: 59px;
     font-weight: 700;
     color: var(--color-black);
-    width: calc((100%/12*6) + var(--gap)*5);
+    width: calc((100% - var(--x-gap)) / 2);
     padding-top: 140px;
 }
 
 h1 span {
-    color: #0284C7;
+    color: var(--primary-color);
 }
 
 .header-text {
@@ -83,20 +85,20 @@ h1 span {
     line-height: 18px;
     font-weight: 400;
     color: #0C4A6E;
-    width: calc((100%/12*6) + var(--gap)*5);
+    width: calc((100% - var(--x-gap)) / 2);
     padding-top: 30px;
 }
 
 .button {
     background-color: #0EA5E9;
     color: #F0F9FF;
-    width: calc((100%/12*2.5) + var(--gap)*2);
+    width: calc((100% - var(--x-gap) * 11) / 12 * 2.5 + var(--x-gap) * 2);
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
     text-align: center;
     padding: 15px;
-    margin: 50px 0px;
+    margin-top: var(--y-gap);
     border: 1px solid #38bdf8;
     border-radius: 10px;
     box-shadow: 0 4px 4px #a3a3a3;
@@ -107,7 +109,7 @@ h2 {
     color: #0369A1;
     font-size: 48px;
     font-weight: 700;
-    padding-top: 90px;
+    padding-top: var(--y-gap);
 }
 
 .doctors-title {
@@ -122,18 +124,17 @@ h2 {
 
 .doctors-text {
     font-size: 24px;
-    font-weight: 600;
-    line-height: 33px;
     color: var(--color-gray);
     text-align: center;
-    padding: 80px 100px;
+    width: calc(100% / 12 * 11);
+    margin: var(--y-gap) auto;
 }
 
 form {
-    width: calc(100% / 12 * 10);
+    width: calc(100% / 12 * 11);
     margin: 0px auto;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: var(--y-gap);
 }
 
 .input-search {
@@ -143,7 +144,7 @@ form {
     color: #A3A3A3;
     border: 1px solid #BAE6FD;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--color-gray);
     font-size: 19px;
     line-height: 38px;
     text-align: left;
@@ -167,58 +168,56 @@ form {
 .specialists {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gap);
+    gap: var(--x-gap);
 }
 
 .doctor {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
+    width: calc((100% - var(--x-gap) * 2) / 3);
+    gap: var(--x-gap);
+    margin-bottom: var(--y-gap);
 }
 
 .specialists-image {
-    box-shadow: 2px 2px 4px rgba(115, 115, 115, 0.25);
+    box-shadow: 0px 4px 4px var(--color-gray);
     border-radius: 20px;
 }
 
 .specialists-name {
     font-weight: 400;
     font-size: 18px;
-    line-height: 29px;
     text-align: center;
-    color: #404040;
-    margin-top: 12px;
+    color: var(--color-total-black);
 }
 
 .speciality {
     font-weight: 700;
     font-size: 18px;
-    line-height: 29px;
     text-align: center;
-    color: #404040;
-    margin-bottom: 24px;
+    color: var(--color-total-black);
 }
 
 .small-button {
-    width: calc((100%/4*2.5) + (var(--gap)*3));
     background-color: var(--color-white);
     color: var(--primary-color);
+    width: 75%;
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
     text-align: center;
     padding: 15px;
+    align-self: center;
     border: 1px solid #38bdf8;
     border-radius: 10px;
+    box-shadow: 0 4px 4px var(--color-gray);
     cursor: pointer;
 }
 
 footer {
-    height: 403px;
+    height: auto;
     background-color: var(--color-light-blue);
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: var(--y-gap) 0px;
 }
 
 .flex {
@@ -233,7 +232,7 @@ footer {
 }
 
 .dento {
-    width: calc(100% / 12 * 5);
+    width: calc(100% / 2);
     font-size: 18px;
     font-weight: 400;
     color: var(--color-dark-blue);
@@ -243,22 +242,24 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: calc(100% / 12 * 2);
+    width: calc(100% / 5);
     font-size: 18px;
     font-weight: 600;
     color: var(--color-dark-blue);
 }
 
 .contacts {
-    padding-top: 50px;
+    padding-top: var(--y-gap);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: var(--x-gap);
 }
 
 .contact-text span {
     font-weight: 700;
 }
+
 
 .contact-text {
     display: flex;
@@ -280,4 +281,110 @@ footer {
     font-weight: 400;
     line-height: 23px;
     text-align: right;
+    padding-top: var(--y-gap);
+}
+
+/*responsive design*/
+
+
+@media (max-width: 768px) {
+    html {
+        --y-gap: 50px;
+    }
+    
+    #logo {
+        font-size: 90%;
+    }
+
+    .menu-text {
+        font-size: 70%;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+
+    .button {
+        font-size: 75%;
+        width: calc((100% - var(--x-gap)*2) / 3);
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .doctors-text {
+        font-size: 20px;
+    }
+
+    .doctor {
+        width: calc((100% - var(--x-gap)) / 2);
+    }
+
+    .footer-detail {
+        justify-content: space-evenly;
+    }
+
+    .dento {
+        font-size: 16px;
+    }
+
+    .link {
+        font-size: 16px;
+        width: calc(100% / 3);
+    }
+
+    .contacts {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+
+    .license {
+        font-size: 15px;
+    }
+
+    .speciality {
+        font-size: 16px;
+    }
+
+    .specialists-name {
+        font-size: 16px;
+    }
+
+    .small-button {
+        font-size: 75%;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        --y-gap: 40px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .doctors-text {
+        font-size: 16px;
+    }
+
+    .speciality {
+        font-size: 14px;
+    }
+
+    .specialists-name {
+        font-size: 14px;
+    }
 }
