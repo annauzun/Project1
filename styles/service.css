@@ -12,7 +12,8 @@ html {
     --color-total-black: #171717;
     --color-light-blue: #F0F9FF;
     --color-dark-blue: #075985;
-    --color-light-grey: #e5e5e5;
+    --color-light-gray: #e5e5e5;
+    --shadow: 0px 4px 4px #737373;
     --x-gap: 20px;
     --y-gap: 60px;
 }
@@ -29,10 +30,26 @@ body {
     padding: 0 calc(var(--x-gap)/2);
 }
 
+.return-button {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
 header {
     background-color: var(--primary-color);
     height: var(--y-gap);
-    box-shadow: 0px 10px 5px var(--color-light-grey);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0px;
 }
 
 a {
@@ -84,14 +101,14 @@ h1 span {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    color: #0C4A6E;
+    color: var(--color-dark-blue);
     width: calc((100% - var(--x-gap)) / 2);
     padding-top: 30px;
 }
 
 .button {
     background-color: #0EA5E9;
-    color: #F0F9FF;
+    color: var(--color-light-blue);
     width: calc((100% - var(--x-gap) * 11) / 12 * 2.5 + var(--x-gap) * 2);
     font-size: 18px;
     font-weight: 700;
@@ -101,19 +118,19 @@ h1 span {
     margin-top: var(--y-gap);
     border: 1px solid #38bdf8;
     border-radius: 10px;
-    box-shadow: 0 4px 4px #a3a3a3;
+    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
 h2 {
-    color: #0369A1;
+    color: var(--color-dark-blue);
     font-size: 48px;
     font-weight: 700;
     padding-top: var(--y-gap);
 }
 
 h3 {
-    color: #0369A1;
+    color: var(--color-dark-blue);
     font-size: 40px;
     font-weight: 700;
     text-align: center;
@@ -135,7 +152,7 @@ h3 {
 
 .treatment-text {
     font-size: 24px;
-    color: #0B4269;
+    color: var(--color-dark-blue);
     text-align: justify;
     margin-bottom: 20px;
     padding-top: 20px;
@@ -144,7 +161,7 @@ h3 {
 .treatment-image {
     width: calc((100% - var(--x-gap) * 11) / 12 * 5 + var(--x-gap) * 4);
     border-radius: 20px;
-    box-shadow: 2px 4px 4px rgba(115, 115, 115, 0.25);
+    box-shadow: var(--shadow);
 }
 
 .prices {
@@ -167,7 +184,7 @@ h3 {
 }
 
 .blue span {
-    color: #0EA5E9;
+    color: var(--primary-color);
 }
 
 .green {
