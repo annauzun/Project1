@@ -360,6 +360,10 @@ footer {
         font-size: 40px;
     }
 
+    .header-text {
+        width: 100%;
+    }
+
     .button {
         font-size: 75%;
         width: calc((100% - var(--x-gap)*2) / 3);
