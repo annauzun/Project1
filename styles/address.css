@@ -130,152 +130,11 @@ h3 {
     padding: var(--y-gap) 0px;
 }
 
-.service-block {
-    background-color: var(--primary-color);
-    height: auto;
-}
-
-.service-section {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--y-gap) 0px;
-}
-
-.triangle {
-    width: 35px;
-    height: 85px;
-    cursor: pointer;
-    align-self: center;
-}
-
-.service {
-    width: calc((100% - var(--x-gap) * 3) / 4);
-    border-radius: 10px;
-    box-shadow: 1px 5px 4px var(--color-total-black);
-    padding: 15px 5px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.s02 {
-    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-3.png');
-}
-
-.s03 {
-    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-2.png');
-}
-
-.s04 {
-    background-image: linear-gradient(90deg, rgba(69, 152, 199, 0.57) 20.34%, rgba(69, 152, 199, 0.57) 20.34%, rgba(92, 89, 118, 0) 96.57%, rgba(0, 0, 0, 0) 96.57%), url('../images/service-1.png');
-}
-
-.service-number {
-    width: 36px;
-    height: 36px;
-    font-size: 24px;
-    font-weight: 300;
-    color: var(--color-light-blue);
-    margin-bottom: var(--y-gap);
-    align-self: top left;
-}
-
-.service-arrow{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.service-text {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
-    color: var(--color-light-blue);
-    width: calc((100% / 3 * 2) + var(--x-gap));
-}
-
-.arrow {
-    width: 45px;
-    color: var(--color-light-blue);
-    margin-top: 20px;
-}
-
-#background {
-    background-image: url('../images/background-1.png');
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    padding-bottom: var(--y-gap);
-}
-
-.description-text {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-    color: var(--color-total-black);
-    text-align: justify;
-    padding-bottom: 18px;
-}
-
-.description-button {
-    display: flex;
-    justify-content: end;
-}
-
-.review-section {
-    margin-top: var(--y-gap);
-}
-
-#reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--x-gap);
-}
-
-.review {
-    display: flex;
-    flex-direction: row;
-    width: calc((100% - var(--x-gap)) / 2);
-    border: 1px solid var(--color-light-gray);
-    border-radius: 20px;
+iframe {
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
     box-shadow: var(--shadow);
-    padding: 8px;
-    margin-bottom: 40px;
-    margin-top: 10px;   
-}
-
-.review-image {
-    align-self: center;
-    margin-right: 10px;
-}
-
-.review-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.review-name {
-    color: var(--primary-color);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 33px;
-}
-
-.review-text {
-    color: var(--color-gray);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px; 
-}
-
-#address {
-    background-image: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8)), url('../images/map-background.png');
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    margin-top: var(--y-gap);
+    margin-bottom: 60px;
 }
 
 .locations {
@@ -433,29 +292,6 @@ footer {
         font-size: 30px;
     }
 
-    .service {
-        width: calc(100% / 4);
-    }
-
-    .arrow {
-        width: 35px;
-    }
-
-    .description-text {
-        font-size: 18px;
-        line-height: normal;
-    }
-
-    .review {
-        flex-direction: row;
-        width: 100%;
-        margin: 0px;
-    }
-
-    .review-name {
-        font-size: 20px;
-    }
-
     .locations {
         flex-direction: column;
         align-items: center;
@@ -523,24 +359,5 @@ footer {
 
     h3 {
         font-size: 28px;
-    }
-
-    .service-section {
-        flex-direction: column;
-        gap: var(--x-gap);
-        padding: 0px;
-        align-items: center;
-    }
-
-    .service {
-        width: calc(100% / 12 * 10);
-    }
-
-    .service-text {
-        font-size: 20px;
-    }
-
-    .triangle {
-        transform: rotate(90deg);
     }
 }
