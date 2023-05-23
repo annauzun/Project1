@@ -44,12 +44,26 @@ body {
     text-decoration: none;
 }
 
-header {
+.header {
     background-color: var(--primary-color);
     height: var(--y-gap);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0px;
+}
+
+.header-mobile-version {
+    display: none;
+}
+
+.mobile-button {
+    background-color: var(--primary-color);
+    color: var(--color-light-blue);   
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 a {
@@ -406,6 +420,23 @@ footer {
     html {
         --y-gap: 50px;
     }
+
+    .header-mobile-version {
+        display: flex;
+        background-color: var(--primary-color);
+        height: var(--y-gap);
+        box-shadow: var(--shadow);
+        position: sticky;
+        top: 0px;
+    }
+    
+    .header {
+        display: none;
+    }
+    
+    .mobile-navigation {
+        display: none;
+    }
     
     #logo {
         font-size: 90%;
@@ -416,7 +447,7 @@ footer {
     }
     
     h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .header-text {
@@ -518,7 +549,7 @@ footer {
     }
     
     h1 {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     h3 {
