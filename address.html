@@ -14,12 +14,13 @@
 
 <body>
     <a href="#" class="return-button">↑</a>
-        <header>
+    <div class="header">
         <div class="section">
             <div class="menu">
                 <div class="logo">
                     <a href="/index.html" id="logo">Dento Plus</a>
                 </div>
+
                 <div class="navigation">
                     <a href="/index.html#background" class="menu-text">О нас</a>
                     <a href="/service.html" class="menu-text">Услуги</a>
@@ -29,7 +30,29 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+
+    <div class="section">
+        <div class="header-mobile-version">
+            <div class="logo">
+                <a href="/index.html" id="logo">Dento Plus</a>
+            </div>
+            
+            <div class="menu">               
+                <button onclick="openMenu()" id="mobile-button">
+                    <img src="images/menu_icon.png" id="menu-icon">
+                </button>
+                
+                <div class="mobile-navigation" id="mobile-navigation">
+                    <a href="/index.html#background" class="menu-text">О нас</a>
+                    <a href="/service.html" class="menu-text">Услуги</a>
+                    <a href="/doctors.html" class="menu-text">Врачи</a>
+                    <a href="/index.html#reviews" class="menu-text">Отзывы</a>
+                    <a href="/address.html" class="menu-text">Отделения</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="hero">
         <div class="section">
